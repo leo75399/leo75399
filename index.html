@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>金融研訓院直播測試頁面</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        * {
+            /* border: 1px solid black !important; */
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <div id="logo"><a href="https://elearn.tabf.org.tw/" target="_blank"><img src="./image/logo.svg" alt=""></a>
+        </div>
+    </header>
+
+    <main>
+        <div id="main_left">
+            <div id="video_bottom">
+                <div id="section_name">
+                    <div>金融研訓院直播測試頁面</div>
+                </div>
+                <div> <a href="javascript:viod(0)"><i class="fas fa-ellipsis-v"></i></a></div>
+
+            </div>
+            <div id="video_warp">
+                <iframe
+                    src="https://vplayer.phimedia.tv/?src=https://wowzaprod179-i.akamaihd.net/hls/live/677683/0c434fd6/playlist.m3u8&type=hls&controls=true"
+                    frameborder="0"></iframe>
+            </div>
+            <ul class="video_content_title">
+                <li><a href="javascript:viod(0)"><i class="fas fa-book-open"></i>課程說明</a></li>
+                <li><a href="javascript:viod(0)" onClick="window.alert('此為測試頁面，尚未開啟投票互動功能');"><i
+                            class="fas fa-poll"></i>投票互動</a></li>
+                <li><a href="javascript:viod(0)" onClick="window.alert('尚未上傳任何教材');"> <i
+                            class="fas fa-file-download"></i>教材下載</a></li>
+
+            </ul>
+            <div id="video_content">
+                <h2><span class="h2_mark">▎</span>課程簡介</h2>
+                <p class="video_content_p">
+                    （此為測試文字，此區塊可以依需求設計服務與文案）有鑑於銀行對國際聯貸市場的參與度積極提升，特邀請實務經驗豐富並對此議題有深入研究之專業講師擔任講座，提供研習人員最完整也最豐富的相關資訊，協助金融從業人員了解國際聯合貸款業務。
+                </p>
+            </div>
+            <div class="more_course_data">
+                <button id="more_course_data_btn">顯示完整資訊<i class="fas fa-chevron-down"></i></button>
+            </div>
+        </div>
+        <div id="main_right">
+            <div class="left_ppt">簡報欄位</div>
+            <div class="left_title">
+                側邊互動欄
+            </div>
+            <div class="left_middle"></div>
+            <div class="left_bottom"> <input type="text" placeholder="傳送訊息"
+                    onClick="window.alert('此為測試頁面，尚未開啟聊天互動功能');"></div>
+
+        </div>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.js"
+        integrity="sha256-sCexhaKpAfuqulKjtSY7V9H7QT0TCN90H+Y5NlmqOUE=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+#logo {
+    max-width: 170px;
+}
+
+header {
+    background-color: white;
+    height: 60px;
+    padding: 10px 10px;
+    background-image: url("../image/background-img1.png");
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: flex;
+}
+
+#video_warp {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+#video_warp iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#main_right {
+    height: calc(100vh - 60px);
+    width: calc(25% + 18px);
+    /*瀏覽器滾動條的長度大約是 18px*/
+    overflow: hidden;
+    border-left: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
+#video_bottom {
+    height: 45px;
+    display: flex;
+    padding: 5px 10px;
+    background: linear-gradient(266deg, rgba(231, 226, 105, 1) 0%, #827f2c 100%);
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+
+}
+
+#video_bottom a {
+    color: rgb(59, 59, 59);
+}
+
+#video_content {
+    background-image: url("../image/background-img7.png");
+    background-size: 100%;
+    background-repeat: repeat-y;
+    padding: 20px;
+}
+
+.video_content_p {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+
+#video_content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(41, 41, 41);
+}
+
+.video_content_p {
+    line-height: 23px;
+}
+
+.h2_mark {
+    color: #827f2c;
+}
+
+#section_name {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.left_ppt {
+    height: 170px;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+    background-color: rgb(71, 71, 71);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left_title {
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.left_middle {
+    overflow-y: scroll;
+    height: calc(100vh - 365px);
+    padding-left: 10px;
+    padding-right: 28px;
+}
+
+.left_bottom {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.left_bottom input {
+    background-color: rgb(221, 221, 221);
+    height: 50px;
+    width: 80%;
+    border: none;
+    padding: 5px 10px;
+}
+
+.video_content_title {
+    height: 40px;
+    background-color: white;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.video_content_title li {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.video_content_title li a i {
+    margin-right: 5px;
+}
+
+.video_content_title li a {
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.more_course_data {
+    display: none;
+}
+
+
+/* 隱藏chrome scrollbar */
+#main_left::-webkit-scrollbar,
+.left_middle::-webkit-scrollbar {
+    display: none
+}
+
+/* 隱藏firefox scrollbar */
+
+main {
+    overflow: -moz-hidden-unscrollable;
+    /*注意！若只打 hidden，chrome 的其它 hidden 會出問題*/
+    height: 100%;
+}
+
+#main_left {
+    height: calc(100vh - 60px);
+    width: calc(75% + 18px);
+    /*瀏覽器滾動條的長度大約是 18px*/
+    overflow: auto;
+}
+
+.left_middle {
+    width: calc(100% + 18px);
+}
+
+
+@media screen and (max-width:992px) {
+    main {
+        display: block;
+    }
+
+    #main_left {
+        width: 100%;
+        height: auto;
+    }
+
+    #main_right {
+        width: 100%;
+    }
+
+    #video_content {
+        display: none;
+    }
+
+    .more_course_data {
+        width: 100%;
+        display: block;
+    }
+
+    #more_course_data_btn {
+
+        width: 100%;
+        font-size: 14px;
+        height: 30px;
+        border: none;
+        background-color: #fff;
+        border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+
+    }
+
+    .fas {
+        margin-left: 5px;
+    }
+}
